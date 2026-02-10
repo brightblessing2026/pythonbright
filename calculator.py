@@ -8,22 +8,22 @@
 # Simple Calculator
 
 # input from user
-num1 = float(input("Enter first number: "))
+x = float(input("Enter first number: "))
 operator = input("Enter sign (+, -, *, /): ")
-num2 = float(input("Enter other number: "))
+y = float(input("Enter other number: "))
 
 # calculation
 if operator == "-":
-    result = num1 - num2
+    result = x - y
 elif operator == "+":
-    result = num1 + num2
+    result = x + y
 elif operator == "/":
-    if num2 != 0:
-        result = num1 / num2
+    if y != 0:
+        result = x / y
     else:
         result = "Error! A number cannot be divided by 0"
 elif operator == "*":
-    result = num1 * num2
+    result = x * y
 
 else:
     result = "Unaccepted "
